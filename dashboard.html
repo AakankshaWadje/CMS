@@ -1,0 +1,227 @@
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</form></td>
+</tr>
+<tr>
+<td height="2" colspan="4" ></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+
+<div class="modal vex-open fade" id="test" tabindex="-1" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="title"></h4>
+      </div>
+      <div class="modal-body">
+        <table class="table datatable table-bordered datatbl" width="100%" id="sdgsdgsdgdsgsd">
+          <thead class="thead">
+            <tr>
+              <th>Name of VO/NGO</th>
+              <th>Registration No.,City & State</th>
+              <th>Address</th>
+              <th>Sectors working in</th>
+            </tr>
+          </thead>
+          <tbody  id="ngo_list">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--- Start Ngo Information modal window-->
+<div id="ngo_info_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true" style="z-index: 1045;">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 style="color: #000;font-weight: bold;font-family: 'Playfair Display', serif;" class="modal-title" id="gridModalLabel">NGO DETAILS</h2>
+        <span style="float:right;margin: -35px 127px 0px 0px;/*! width: -4%; */font-size: 2em;"><a href="javascript:void(0)"  onclick="printElement()" title="Print This Page" ><i class="fa fa-print" aria-hidden="true"></i></a>
+        </span>
+      </div>
+      <div class="modal-body" id="printThis">
+      <div class="container">
+        <div class="row">
+        <h3 class="h3style" style="text-align:center;"><span id="ngo_name_title"></span></h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate">
+          <tbody>
+          <tr>
+          <td>Unique Id of VO/NGO</td>
+          <td><span id="UniqueID"></span></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <h3 class="h3style">Registration Details</h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate">
+          <tbody>
+          <tr>
+          <td>Registered With</td>
+          <td id="reg_with">Sub-Registrar</td>
+          </tr>
+          <tr>
+          <td>Type of NGO</td>
+          <td id="ngo_type">Trust</td>
+          </tr>
+          <tr>
+          <td>Registration No</td>
+          <td id="ngo_regno"></td>
+          </tr>
+
+          <tr>
+          <td>Copy of Registration Certificate</td>
+          <td id="rc_upload"></td>
+          </tr>
+
+          <tr>
+          <td>Copy of Pan Card</td>
+          <td id="pc_upload"></td>
+          </tr>
+
+          <tr>
+          <td>Act name</td>
+          <td id="ngo_act_name"></td>
+          </tr>
+
+          <tr>
+          <td>City of Registration</td>
+          <td id="ngo_city_p"></td>
+          </tr>
+          <tr>
+          <td>State of Registration</td>
+          <td id="ngo_state_p"></td>
+          </tr>
+          <tr>
+          <td>Date of Registration</td>
+          <td id="ngo_reg_date"></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <h3 class="h3style">Members</h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate" id="member_table">
+          <tbody>
+          </tbody>
+        </table>
+
+        <h3 class="h3style">Sector/ Key Issues</h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate">
+          <tbody>
+          <tr>
+          <td>Key Issues</td>
+          <td id="key_issues"></td>
+          </tr>
+          <tr>
+          <td>Operational Area-States</td>
+          <td id="operational_states"></td>
+          </tr>
+
+          <tr>
+          <td>Operational Area-District</td>
+          <td id="operational_district"></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <h3 class="h3style">FCRA details</h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate">
+          <tbody>
+          <tr>
+          <th style="width:20%;">FCRA Available</th>
+          <th style="width:72%;">FCRA Registration no.</th>
+          </tr>
+
+          <tr>
+          <td id="FCRA_details"></td>
+          <td id="FCRA_reg_no"></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <h3 class="h3style">Details of Achievements</h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate">
+          <tbody>
+          <tr>
+          <td id="activities_achieve"></td>
+          </tr>
+          </tbody>
+        </table>
+
+        <h3 class="h3style">Source of Funds</h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate" id="source_table">
+          <tbody>
+          </tbody>
+        </table>
+
+        <h3 class="h3style">Contact Details</h3>
+        <table style="border: 1px solid #ccc;border-collapse: collapse;border-spacing: 0;width: 74%;display: table;" class="w3-table-all notranslate">
+          <tbody>        
+          <tr>
+          <td>Address</td>
+          <td id="address"></td>
+          </tr>
+
+          <tr>
+          <td>City</td>
+          <td id="city"></td>
+          </tr>
+
+          <tr>
+          <td>State</td>
+          <td id="state_p_ngo"></td>
+          </tr>        
+
+          <tr>
+          <td>Telephone</td>
+          <td id="phone_n"></td>
+          </tr>  
+
+          <tr>
+          <td>Mobile No</td>
+          <td id="mobile_n"></td>
+          </tr>  
+
+          <tr>
+          <td>Website Url</td>
+          <td id="ngo_web_url"></td>
+          </tr> 
+
+          <tr>
+          <td>E-mail</td>
+          <td id="email_n"></td>
+          </tr> 
+          </tbody>
+        </table>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
