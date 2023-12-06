@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>WE CHARITY</title>
+  </head>
+  <body>
+    <div class="nevbar" id="nevbar">
+      <div class="logo">
+        <a href="/home.html" id="logo"
+          ><h1><span>WE</span> CHARITY</h1></a
+        >
+      </div>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a id="home" href="home.html">Home</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#aboutus" target="_top">About us</a></li>
+          <li><a id="login" href="login.html" target="_top">Admin Login</a></li>
+        </ul>
+      </div>
+      <div class="menuicon">
+        <i
+          id="menuicon"
+          onclick="togglemenu()"
+          class="fas fa-chevron-circle-down"
+        >
+          <span>MENU</span></i
+        >
+      </div>
+    </div>
+
+    <div class="cover">
+      <div class="information">
+        <h1>-</h1>
+        <h3>Raising Hope</h3>
+        <h2>SPREAD JOY WITH A</h2>
+        <h1><span>DONATION</span></h1>
+        <h1>-</h1>
+        <a href="#explore"><button>EXPLORE</button></a>
+        <a href="./test.html"><button>NGOs</button></a>
+
+      </div>
+    </div>
+
+    <div class="explore" id="explore"></div>
+
+    <div class="about">
+      <div class="imgcontanner">
+        <div class="aboutimg"></div>
+      </div>
+      <div class="aboutcontent">
+        <h5>_</h5>
+        <h1>Why Donate?</h1>
+        <p>
+          This is the platform for the donors to contribute for the people in
+          need. We provide the contact and information of NGO’s in several area
+          across India. So that the people can know everything before they
+          contribute anything.
+        </p>
+        <br />
+        <br />
+        <h5>_</h5>
+      </div>
+    </div>
+
+    <!-- ----------------------------------  Service -------------------------------------- -->
+    <div class="service" id="service">
+      <h5>SERVICES</h5>
+      <h1>Our Latest Services</h1>
+
+      <div class="details">
+        <div class="info">
+          <div class="logo"><i class="fas fa-book-reader"></i></div>
+          <p id="head">What we do</p>
+          <p>We help empower underprivileged people to get a better life.</p>
+        </div>
+
+        <div class="info" data-aos="fade-up">
+          <div class="logo"><i class="fas fa-book-open"></i></div>
+          <p id="head">How we do it</p>
+          <p>
+            We are the intermidiater between NGO centres and Donars, through us
+            they get to coonect with different NGO's and can donate hassle free.
+          </p>
+        </div>
+
+        <div class="info" data-aos="fade-up">
+          <div class="logo"><i class="fas fa-book"></i></div>
+          <p id="head">Make a difference</p>
+          <p>
+            Your little time and contribution can make a person's life better.
+          </p>
+        </div>
+
+        <div class="info" data-aos="fade-up">
+          <div class="logo"><i class="fas fa-chart-line"></i></div>
+          <p id="head">Lives benefitted so far</p>
+          <p>
+            Over 50k+ children have benefitted so far with thousands more to go
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------- About Us ------------------- -->
+    <div class="aboutus" id="aboutus">
+      <div class="aboutus_align">
+        <div style="background-color: rgb(1, 161, 1); padding: 2em;">
+          <h1 style="font-size: 4em; color: white;  ">About Us</h1>
+        </div>
+        <div style="background-color: white; padding: 2em; border-radius: 2em;">
+          <p>
+            Often the people in society who are in need are the most overlooked.
+            Society and governments are not set up to protect everyone who needs
+            it. That is why charities are here to fill the gaps and provide
+            dedicated resources to help the most vulnerable. For children, they
+            rely on their parents or carers to give them safety, guidance, and
+            access to life is necessities. Sadly for many children, this is not
+            the case. Many of them are orphan , and do not have money for
+            education, guidance and daily needs. we provise such orpahage homes
+            , old age homes and NGO donar who are willing to donate necessay
+            items which will help them for good survival.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------- contact ------------------- -->
+
+    <div class="contact" id="contact">
+      <h1>CONTACT ME</h1>
+      <br />
+      <div class="contactcontanner">
+        <div class="contanner">
+          <div class="heading">
+            <div class="icon"><i class="far fa-map"></i></div>
+            <div class="info">
+              <p>Address :</p>
+              <p id="contactinfo">
+                Shri Guru Gobind Singhji Institute of Engineering and
+                Technology,Vishnupuri,Nanded,Maharashta,India, 431606
+              </p>
+            </div>
+          </div>
+
+          <div class="heading">
+            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="info">
+              <p>Phone :</p>
+              <p id="contactinfo">91+9356883765</p>
+            </div>
+          </div>
+
+          <div class="heading">
+            <div class="icon"><i class="far fa-envelope"></i></div>
+            <div class="info">
+              <p>Email :</p>
+              <p id="contactinfo">2021bcs044@sggs.ac.in</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="messageform">
+          <div class="form">
+            <form action="" method="POST">
+              <style>
+                ::placeholder {
+                  color: rgba(255, 255, 255, 0.7);
+                }
+              </style>
+
+              <input type="text" name="name" placeholder="NAME" required />
+              <input type="email" name="email" placeholder="EMAIL" required />
+              <input
+                type="text"
+                name="subject"
+                placeholder="SUBJECT"
+                required
+              />
+              <textarea
+                type="message"
+                name="message"
+                id="inputbox"
+                cols="30"
+                rows="5"
+                placeholder="MESSAGE"
+                required
+              ></textarea>
+              <button type="submit">SEND MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------  Counter  ---------------------------------- -->
+    <div class="contercontent">
+      <div class="counterbox one">
+        <div class="information" data-aos="fade-down">
+          <div class="number">
+            <p style="color: rgba(255, 255, 255, 0.9)">We</p>
+          </div>
+          <div class="text">
+            <p style="color: rgba(255, 255, 255, 0.7)">Provide</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="counterbox">
+        <div class="information" data-aos="fade-down">
+          <div class="text"><p>Old Age Homes</p></div>
+        </div>
+      </div>
+
+      <div class="counterbox">
+        <div class="information" data-aos="fade-down">
+          <div class="text">
+            <p>
+              NGO'S of <br />
+              Handicapped People
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="counterbox">
+        <div class="information" data-aos="fade-down">
+          <div class="number"><p>21</p></div>
+          <div class="text">
+            <p>
+              States <br />
+              Across India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="topspace"></div> -->
+    <footer>
+      <p>&copy 2023 Charity.com❤️ All Rights Reserved.</p>
+    </footer>
+    <!-- scripts  -->
+    <script>
+      // drop down menu script
+      var menu = document.getElementById("menu");
+      menu.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menu.style.maxHeight == "0px") {
+          menu.style.maxHeight = "390px";
+        } else {
+          menu.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
