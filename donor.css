@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.503);
+    color: white;
+}
+
+body{
+background-image: url(10667-NMQULH.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}
+
+.gender-details-box{
+    color: white;
+}
+
+.gender-title{
+    color: white;
+}
+
+.gender-category{
+    color: white;
+}
+
+.title{
+    background-color: black;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#donorForm{
+padding-top: 1em;
+}
